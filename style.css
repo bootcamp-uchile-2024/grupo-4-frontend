@@ -1,0 +1,47 @@
+body {
+    background-color: #6b4d38;
+}
+
+
+#header {
+    display: grid;
+    justify-content: center;
+}
+
+#header .centrado {
+    justify-self: center;
+    color: #c99e85e2;
+}
+
+#contenedor-imagen {
+    object-fit: cover;
+    border-width: 10px;
+    border-style: dashed double;
+    border-color: #e7c0a5ad;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#nav a{
+    text-decoration: none;
+    color: bisque;
+}
+
+#nav a:hover{
+    background-color: #1f1207;
+}
+
+
+#footer {
+    background-color: #4a311c;
+    color: whitesmoke;
+    padding: 0px 10px;
+}
+
+#footer section {
+    display: flex;
+    justify-content: space-between;
+}

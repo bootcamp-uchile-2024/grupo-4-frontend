@@ -1,0 +1,29 @@
+#main {
+    width: 300px;
+    height: 90vh;
+    background-color: #be917185;
+    padding-left: 30px;
+}
+
+#nav ul, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav li, li{
+    margin: 10px 0px;
+}
+
+#nav a, a {
+    text-decoration: none;
+    color: bisque;
+    font-size: 25px;
+    font-family: monospace;
+ 
+}
+
+#nav a:hover, a:hover {
+    background-color: #1f1207;
+}
+

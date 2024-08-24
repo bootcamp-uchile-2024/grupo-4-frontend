@@ -1,0 +1,11 @@
+
+#footer {
+    background-color: #4a311c;
+    color: whitesmoke;
+    padding: 0px 10px;
+}
+
+#footer section {
+    display: flex;
+    justify-content: space-between;
+}

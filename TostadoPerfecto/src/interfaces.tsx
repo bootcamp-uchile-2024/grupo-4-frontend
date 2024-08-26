@@ -1,44 +1,34 @@
-import { Tipos } from './tipos.enum';
-import { Categorias } from './categorias.interface';
-import { Producto } from './producto.interface';
+import { Categorias, Tipo } from "./Servicios/interfaces";
 
-export class Productos implements Producto {
-  @ApiProperty()
-  id: number;
-
-  @ApiProperty()
+interface RequestCreateProductoDTO {
   nombre: string;
-
-  @ApiProperty()
   descripcion: string;
-
-  @ApiProperty()
   precio: number;
-
-  @ApiProperty()
   imagen: string;
-
-  @ApiProperty()
   stock: number;
-
-  @ApiProperty()
   marca: string;
-
-  @ApiProperty()
   origen: string;
-
-  @ApiProperty()
-  tipo: Tipos;
-
-  @ApiProperty()
+  tipo: Tipo;
   formato: string;
-
-  @ApiProperty()
   fecha: Date;
-
-  @ApiProperty()
-  categorias: Categorias[];
-
-  @ApiProperty()
+  categorias : Categorias;
   destacado: boolean;
 }
+
+interface ResponseCreateProductoDTO{
+  id: number;
+  nombre: string;
+  descripcion: string;
+  precio: number;
+  imagen: string;
+  stock: number;
+  marca: string;
+  origen: string;
+  tipo: Tipo;
+  formato: string;
+  fecha: Date;
+  categorias: Categorias;
+  destacado: boolean;
+}
+
+export type {RequestCreateProductoDTO, ResponseCreateProductoDTO, Tipo, Categorias};

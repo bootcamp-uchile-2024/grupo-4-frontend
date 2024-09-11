@@ -1,5 +1,6 @@
+import Carrusel from "./Componentes/Carrusel";
 import "./Header.css"
-import { Carrusel } from "./Componentes/Carrusel";
+
 
 
 function Header() {

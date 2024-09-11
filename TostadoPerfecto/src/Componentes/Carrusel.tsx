@@ -1,23 +1,47 @@
-import img1 from "../imagenes/Img Carrusel/img1.jpg"
-import img2 from "../imagenes/Img Carrusel/img2.jpg"
-import img3 from "../imagenes/Img Carrusel/img3.jpg"
-import img4 from "../imagenes/Img Carrusel/img4.jpg"
-import img5 from "../imagenes/Img Carrusel/img5.jpg"
-import { ImageSlider } from "./ImageSlider"
 
-const ImagenesCarrusel = [img1, img2, img3, img4, img5]
+import "./Carrusel.css"
+import Carousel from 'react-bootstrap/Carousel';
 
-export function Carrusel(){
 
+function Carrusel() {
   return (
-    <div style={{
-      maxWidth: "1200px",
-      width: "100%",
-      aspectRatio: "5/2",
-      margin: "0 auto",
-    }}>
+    <Carousel>
+      <Carousel.Item >
+        <img src="src/imagenes/Img Carrusel/img1.jpg" alt="" />
+        <Carousel.Caption>
+          <h3>Café de Especialidad</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src="src/imagenes/Img Carrusel/img2.jpg" alt="" />
+        <Carousel.Caption>
+          <h3>Paquetes personalizados</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src="src/imagenes/Img Carrusel/img3.jpg" alt="" />
+        <Carousel.Caption>
+          <h3>Recolección ética</h3>
+          <p>Garantiza que las comunidades vegetales dispondrán de suficientes reservas para prosperar y reproducirse, y que los animales locales que dependen de esas fuentes de alimento no sufrirán el saqueo de sus despensas</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src="src/imagenes/Img Carrusel/img4.jpg" alt="" />
+        <Carousel.Caption>
+          <h3>Únete a nuestra comunidad</h3>
+          <p>En el Foro puedes encontrar a otros entusiastas del café, recomendaciones y más!</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src="src/imagenes/Img Carrusel/img5.jpg" alt="" />
+        <Carousel.Caption>
+          <h3>Accesorios</h3>
+          <p>Gran variedad para que puedas lograr un café perfecto.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
 
-      <ImageSlider imageUrls={ImagenesCarrusel}/>
-    </div>
-    )
+    </Carousel>
+  );
 }
+
+export default Carrusel;

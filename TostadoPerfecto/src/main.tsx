@@ -4,11 +4,14 @@ import './index.css'
 import Header from './Header.tsx'
 import Body from './Body.tsx'
 import Footer from './Footer.tsx'
+import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Header />
-    <Body />
-    <Footer />
+    <BrowserRouter>
+      <Header />
+      <Body />
+      <Footer />
+    </BrowserRouter>
   </StrictMode>,
 )

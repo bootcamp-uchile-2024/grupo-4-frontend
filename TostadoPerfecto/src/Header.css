@@ -1,21 +1,5 @@
-#header {
-    display: grid;
-    justify-content: center;
-}
 
-#header .centrado {
-    justify-self: center;
-    color: #c99e85e2;
-}
 
-#contenedor-imagen {
-    object-fit: cover;
-    border-width: 10px;
-    border-style: dashed double;
-    border-color: #e7c0a5ad;
-}
-
-h2{
-    color: whitesmoke;
-    text-decoration: underline;
+.body-header{
+    background-color: #8c2f39;
 }

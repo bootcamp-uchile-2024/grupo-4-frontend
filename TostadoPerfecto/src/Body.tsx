@@ -3,7 +3,7 @@ import { Navbar } from "./Componentes/NavBar";
 
 import { About } from "./Paginas/About";
 import { Carrito } from "./Paginas/Carrito";
-import { Catalogo } from "./Paginas/Catalogo";
+import Catalogo from "./Componentes/Catalogo";
 import { Foro } from "./Paginas/Foro";
 import { Home } from "./Paginas/Home";
 import { Route, Routes } from "react-router-dom";

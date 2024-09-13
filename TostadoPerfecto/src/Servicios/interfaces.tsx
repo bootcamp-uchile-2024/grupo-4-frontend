@@ -27,4 +27,5 @@ interface Producto {
     destacado: boolean;
 }
 
-export type {Tipo, Categorias, Producto};
+export { Tipo };
+export type { Categorias, Producto };

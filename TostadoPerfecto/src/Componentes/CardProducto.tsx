@@ -1,13 +1,21 @@
 
 import { Producto } from '../Servicios/interfaces'
-import { Button, Card } from 'react-bootstrap';
-
+import { Button, Card, Container } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 interface ProductProps {
     producto: Producto;
 }
 
 function CardProducto({ producto }: ProductProps) {
+
+    const navigate = useNavigate(); // Hook para la navegación
+
+    const handleNavigate = () => {
+        // Redirige a otra ruta, puedes pasar el ID del producto u otros datos si es necesario
+        navigate(`/producto/${producto.id}`); // O la ruta que necesites
+    }
+
     return (
         <div>
             <style type="text/css">
@@ -23,15 +31,20 @@ function CardProducto({ producto }: ProductProps) {
                     }                   
                     `}
             </style>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={producto.imagen} alt={producto.nombre} />
-                <Card.Body>
-                    <Card.Title>{producto.nombre}</Card.Title>
-                    <Card.Text>{producto.descripcion}</Card.Text>
-                    <Card.Subtitle>{producto.precio}</Card.Subtitle>
-                    <Button variant="flat">Añadir al carito</Button>
-                </Card.Body>
-            </Card>
+            <Container>
+
+                <Card style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src={producto.imagen} alt={producto.nombre} />
+                    <Card.Body>
+                        <Card.Link onClick={handleNavigate}>{producto.nombre}</Card.Link>
+                        <Card.Text>{producto.descripcion}</Card.Text>
+                        <Card.Subtitle>{producto.precio}</Card.Subtitle>
+                        <Button variant="flat">Añadir al carrito</Button>
+                    </Card.Body>
+                </Card>
+
+
+            </Container>
         </div>
     )
 }

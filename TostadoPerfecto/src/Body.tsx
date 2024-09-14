@@ -7,6 +7,7 @@ import Catalogo from "./Componentes/Catalogo";
 import { Foro } from "./Paginas/Foro";
 import { Home } from "./Paginas/Home";
 import { Route, Routes } from "react-router-dom";
+import { Products } from "./Paginas/Products";
 
 
 function Body() {     
@@ -20,6 +21,7 @@ function Body() {
                 <Route path="/carrito" element={<Carrito/>}></Route>
                 <Route path="/foro" element={<Foro/>}></Route>
                 <Route path="/about" element={<About/>}></Route>
+                <Route path="/producto/:id" element={<Products/>}></Route>
                </Routes>
             </div>
         </div>

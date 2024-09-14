@@ -1,19 +1,18 @@
 import {Producto, Tipo} from '../Servicios/interfaces';
 
-
 export const productosData: Producto[] = [
     {
         id: 1,
         nombre: 'producto1',
         descripcion: 'Descripcion 1',
         precio: 100,
-        imagen: 'src/imagenes/logo.png', 
+        imagen: '../src/imagenes/logo.png', 
         stock: 1,
         marca: 'marca', 
         origen: 'origen',
         tipo: Tipo.accesorios,
         formato: 'formato',
-        fecha: new Date,
+        fecha: new Date(),
         categorias: {
             id: 1,
             nombre: 'nombre categoria'
@@ -25,13 +24,13 @@ export const productosData: Producto[] = [
         nombre: 'producto2',
         descripcion: 'Descripcion 2',
         precio: 100,
-        imagen: 'src/imagenes/logo.png', 
+        imagen: '../src/imagenes/logo.png', 
         stock: 1,
         marca: 'marca', 
         origen: 'origen',
         tipo: Tipo.accesorios,
         formato: 'formato',
-        fecha: new Date,
+        fecha: new Date(),
         categorias: {
             id: 2,
             nombre: 'nombre categoria'
@@ -43,13 +42,13 @@ export const productosData: Producto[] = [
         nombre: 'producto3',
         descripcion: 'Descripcion 3',
         precio: 100,
-        imagen: 'src/imagenes/logo.png', 
+        imagen: '../src/imagenes/logo.png', 
         stock: 1,
         marca: 'marca', 
         origen: 'origen',
         tipo: Tipo.accesorios,
         formato: 'formato',
-        fecha: new Date,
+        fecha: new Date(),
         categorias: {
             id: 3,
             nombre: 'nombre categoria'
@@ -61,13 +60,13 @@ export const productosData: Producto[] = [
         nombre: 'producto4',
         descripcion: 'Descripcion 4',
         precio: 100,
-        imagen: 'src/imagenes/logo.png', 
+        imagen: '../src/imagenes/logo.png', 
         stock: 1,
         marca: 'marca', 
         origen: 'origen',
         tipo: Tipo.accesorios,
         formato: 'formato',
-        fecha: new Date,
+        fecha: new Date(),
         categorias: {
             id: 4,
             nombre: 'nombre categoria'
@@ -79,13 +78,13 @@ export const productosData: Producto[] = [
         nombre: 'producto5',
         descripcion: 'Descripcion 5',
         precio: 100,
-        imagen: 'src/imagenes/logo.png', 
+        imagen: '../src/imagenes/logo.png', 
         stock: 1,
         marca: 'marca', 
         origen: 'origen',
         tipo: Tipo.accesorios,
         formato: 'formato',
-        fecha: new Date,
+        fecha: new Date(),
         categorias: {
             id: 5,
             nombre: 'nombre categoria'
@@ -97,13 +96,13 @@ export const productosData: Producto[] = [
         nombre: 'producto6',
         descripcion: 'Descripcion 6',
         precio: 100,
-        imagen: 'src/imagenes/logo.png', 
+        imagen: '../src/imagenes/logo.png', 
         stock: 1,
         marca: 'marca', 
         origen: 'origen',
         tipo: Tipo.accesorios,
         formato: 'formato',
-        fecha: new Date,
+        fecha: new Date(),
         categorias: {
             id: 6,
             nombre: 'nombre categoria'
@@ -115,13 +114,13 @@ export const productosData: Producto[] = [
         nombre: 'producto7',
         descripcion: 'Descripcion 7',
         precio: 100,
-        imagen: 'src/imagenes/logo.png', 
+        imagen: '../src/imagenes/logo.png', 
         stock: 1,
         marca: 'marca', 
         origen: 'origen',
         tipo: Tipo.accesorios,
         formato: 'formato',
-        fecha: new Date,
+        fecha: new Date(),
         categorias: {
             id: 7,
             nombre: 'nombre categoria'
@@ -133,13 +132,13 @@ export const productosData: Producto[] = [
         nombre: 'producto8',
         descripcion: 'Descripcion 8',
         precio: 100,
-        imagen: 'src/imagenes/logo.png', 
+        imagen: '../src/imagenes/logo.png', 
         stock: 1,
         marca: 'marca', 
         origen: 'origen',
         tipo: Tipo.accesorios,
         formato: 'formato',
-        fecha: new Date,
+        fecha: new Date(),
         categorias: {
             id: 8,
             nombre: 'nombre categoria'
@@ -151,13 +150,13 @@ export const productosData: Producto[] = [
         nombre: 'producto9',
         descripcion: 'Descripcion 9',
         precio: 100,
-        imagen: 'src/imagenes/logo.png', 
+        imagen: '../src/imagenes/logo.png', 
         stock: 1,
         marca: 'marca', 
         origen: 'origen',
         tipo: Tipo.accesorios,
         formato: 'formato',
-        fecha: new Date,
+        fecha: new Date(),
         categorias: {
             id: 9,
             nombre: 'nombre categoria'
@@ -169,17 +168,17 @@ export const productosData: Producto[] = [
         nombre: 'producto10',
         descripcion: 'Descripcion 10',
         precio: 100,
-        imagen: 'src/imagenes/logo.png', 
+        imagen: '../src/imagenes/logo.png', 
         stock: 1,
         marca: 'marca', 
         origen: 'origen',
         tipo: Tipo.accesorios,
         formato: 'formato',
-        fecha: new Date,
+        fecha: new Date(),
         categorias: {
             id: 10,
             nombre: 'nombre categoria'
         },
-        destacado: true,
-    },
-]
+        destacado: false,
+    }
+];

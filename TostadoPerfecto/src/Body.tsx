@@ -8,6 +8,8 @@ import { Foro } from "./Paginas/Foro";
 import { Home } from "./Paginas/Home";
 import { Route, Routes } from "react-router-dom";
 import { Products } from "./Paginas/Products";
+import { Login } from "./Paginas/Login";
+import { Admin } from "./Paginas/Admin";
 
 
 function Body() {     
@@ -17,11 +19,13 @@ function Body() {
             <div className="container">
                <Routes>
                 <Route path="/" element={<Home/>}></Route>
+                <Route path="/login" element={<Login/>}></Route>
                 <Route path="/catalogo" element={<Catalogo/>}></Route>
                 <Route path="/carrito" element={<Carrito/>}></Route>
                 <Route path="/foro" element={<Foro/>}></Route>
                 <Route path="/about" element={<About/>}></Route>
                 <Route path="/producto/:id" element={<Products/>}></Route>
+                <Route path="/admin" element={<Admin/>}></Route>
                </Routes>
             </div>
         </div>

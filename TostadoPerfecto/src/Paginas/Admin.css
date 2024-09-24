@@ -1,0 +1,52 @@
+.container-admin{
+    display: flex;
+    flex-flow: column;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #461220;
+    background-color: #EBE9E1;
+    border-color: #B23A48;
+}
+
+.nav-tabs .nav-link:hover{
+    color: #8C2F39
+}
+.nav-tabs {
+    border-bottom: none;
+}
+
+ul{
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#productoForm, #userForm{
+    background-color: #8C2F39;   
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.label-form{
+    width: 10rem;
+    color: #EBE9E1;
+    text-align: left;
+}
+.mini-caja {
+    margin: 5px 0px;
+}
+
+.fecha-cracion{
+    width: 13rem ;
+}
+.label-imagen{
+    width: 5rem;
+}
+
+div .tab-content{
+    display: flex;
+    justify-content: center;
+}

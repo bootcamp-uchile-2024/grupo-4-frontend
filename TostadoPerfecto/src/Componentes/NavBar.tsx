@@ -9,6 +9,7 @@ export function Navbar() {
             <nav className="nav">
                 <Link to="/" className="site-title">Tostado Perfecto</Link>
                 <ul>
+                    <CustomLink to="/login">Login</CustomLink>
                     <CustomLink to="/catalogo">Catálogo</CustomLink>
                     <CustomLink to="/carrito">Carrito</CustomLink>
                     <CustomLink to="/foro">Foro</CustomLink>

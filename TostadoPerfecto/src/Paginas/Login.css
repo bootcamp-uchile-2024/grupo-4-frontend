@@ -1,0 +1,40 @@
+#loginForm {
+    background-color: #8C2F39;
+    width: 15rem;
+    height: 10rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.contenedor-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.icono {
+    color: #EBE9E1;
+    padding-right: 10px;
+}
+
+.mini-caja {
+    margin: auto;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.btn-flat {
+    background-color: #B23A48 !important;
+    color: #EBE9E1 !important;
+    margin-top: 10px;
+}
+
+.btn-flat:hover {
+    background-color: #461220 !important;
+}

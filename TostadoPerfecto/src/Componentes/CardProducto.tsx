@@ -32,7 +32,6 @@ function CardProducto({ producto }: ProductProps) {
                     `}
             </style>
             <Container>
-
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={producto.imagen} alt={producto.nombre} />
                     <Card.Body>
@@ -42,8 +41,6 @@ function CardProducto({ producto }: ProductProps) {
                         <Button variant="flat">Añadir al carrito</Button>
                     </Card.Body>
                 </Card>
-
-
             </Container>
         </div>
     )

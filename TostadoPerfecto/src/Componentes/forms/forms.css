@@ -1,0 +1,53 @@
+.form-container {
+    width: 100%;
+    max-width: 700px;
+}
+
+.form-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    padding: 20px;
+}
+
+.form-content  .label-form {
+    color: black;
+}
+
+
+.fecha-cracion{
+    width: 13rem ;
+}
+.label-imagen{
+    width: 5rem;
+}
+
+.mini-caja {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+}
+
+.mini-caja input {
+    width: 100%;
+    padding: 0.75rem 2rem;
+    background: #ffff;
+    border: 1px solid #dcdfe5;
+    color: #424b5a
+}
+
+.mini-caja select {
+    width: 100%;
+    padding: 0.75rem 2rem;
+    background: #ffff;
+    border: 1px solid #dcdfe5;
+    color: #424b5a
+}
+
+.mini-caja label {
+    width: 100%;
+}
+

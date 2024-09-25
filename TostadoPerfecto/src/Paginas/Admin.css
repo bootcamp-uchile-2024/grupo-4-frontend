@@ -9,12 +9,22 @@
     border-color: #B23A48;
 }
 
-.nav-tabs .nav-link:hover{
-    color: #8C2F39
-}
+
 .nav-tabs {
     border-bottom: none;
 }
+
+.container-admin .nav-tabs {
+    background: #dadad7;
+    gap: unset;
+    align-items: center;
+    padding: 0;
+}
+
+.container-admin .nav-tabs .nav-item:hover {
+    background: none;
+}
+
 
 ul{
     border-radius: 10px;
@@ -22,31 +32,4 @@ ul{
     padding: 0;
 }
 
-#productoForm, #userForm{
-    background-color: #8C2F39;   
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-}
-.label-form{
-    width: 10rem;
-    color: #EBE9E1;
-    text-align: left;
-}
-.mini-caja {
-    margin: 5px 0px;
-}
 
-.fecha-cracion{
-    width: 13rem ;
-}
-.label-imagen{
-    width: 5rem;
-}
-
-div .tab-content{
-    display: flex;
-    justify-content: center;
-}

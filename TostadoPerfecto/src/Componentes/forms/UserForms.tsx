@@ -41,7 +41,7 @@ export const UserForms = () => {
     },
     validationSchema: validationSchema,
     onSubmit: values => {
-        console.log('Valores del formulario:', values);
+        console.log('Valores del formulario:',  JSON.stringify(values));
     },
   });
 

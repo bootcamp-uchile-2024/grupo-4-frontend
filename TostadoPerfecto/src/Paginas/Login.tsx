@@ -8,6 +8,8 @@ import {  useNavigate} from 'react-router-dom';
 
 
 export function Login() {
+    
+    const navigate = useNavigate();
 
     const [formData, setFormData] = useState({
         nombre: "",
@@ -21,18 +23,15 @@ export function Login() {
 
     function handleSubmit(event: React.FormEvent) {
         event.preventDefault();
-        console.log("Datos del formulario en JSON:", JSON.stringify(formData, null, 2));
-    }
-
-    const navigate = useNavigate();
-    const handleIngresar = () => {
+        console.log("Datos del formulario en JSON:", JSON.stringify(formData));
         navigate("/admin");
     }
+
 
     return (
         <div className="contenedor-login">            
             <form onSubmit={handleSubmit} id="loginForm">
-                <div className="mini-caja">
+                <div className="mini-caja-login">
                     <FontAwesomeIcon icon={faUser} className="icono" />
                     <input
                         type="text"
@@ -42,7 +41,7 @@ export function Login() {
                         id="usuario"
                         placeholder="Nombre de usuario" />
                 </div>
-                <div className="mini-caja">
+                <div className="mini-caja-login">
                     <FontAwesomeIcon icon={faKey} className="icono" />
                     <input
                         type="password"
@@ -52,8 +51,8 @@ export function Login() {
                         id="password"
                         placeholder="Contraseña" />
                 </div>
-                <div className="mini-caja">
-                    <Button variant="flat" type="submit" size="sm" onClick={handleIngresar}>Ingresar</Button>
+                <div className="mini-caja-button">
+                    <Button variant="flat" type="submit" size="sm">Ingresar</Button>
                 </div>
             </form>
         </div>

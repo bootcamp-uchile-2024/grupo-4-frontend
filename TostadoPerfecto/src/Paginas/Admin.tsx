@@ -2,7 +2,7 @@
 import { Tabs, Tab } from "react-bootstrap";
 import "./Admin.css"
 import { ProductForms } from "../Componentes/forms/ProductForms";
-import { UserForms } from "../Componentes/forms/UserForms";
+
 
 export function Admin() {
 
@@ -20,15 +20,7 @@ export function Admin() {
                         <h2>Nuevo Producto</h2>
                         <ProductForms />
                     </div>
-                </Tab>
-                <Tab eventKey="newUser" title="Nuevo Usuario">
-                    <div className="d-flex flex-column align-items-center justify-content-center">
-                        <h2>Nuevo Usuario</h2>
-                        <UserForms />
-                    </div>
-
-                </Tab>
-
+                </Tab>               
             </Tabs>
         </div>
     )

@@ -27,6 +27,11 @@ export function Login() {
         navigate("/admin");
     }
 
+    function onClickNuevoUsuario(event: React.FormEvent) {
+        event.preventDefault();        
+        navigate("/nuevoUsuario");
+    }
+
 
     return (
         <div className="contenedor-login">            
@@ -53,6 +58,7 @@ export function Login() {
                 </div>
                 <div className="mini-caja-button">
                     <Button variant="flat" type="submit" size="sm">Ingresar</Button>
+                    <Button variant="flat" type="submit" id="boton-nuevo-usuario" onClick={onClickNuevoUsuario} size="sm">Nuevo Usuario</Button>
                 </div>
             </form>
         </div>

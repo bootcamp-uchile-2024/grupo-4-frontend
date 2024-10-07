@@ -10,6 +10,7 @@ import { Route, Routes } from "react-router-dom";
 import { Products } from "./Paginas/Products";
 import { Login } from "./Paginas/Login";
 import { Admin } from "./Paginas/Admin";
+import { UserForms } from './Componentes/forms/UserForms';
 
 
 function Body() {     
@@ -26,6 +27,7 @@ function Body() {
                 <Route path="/about" element={<About/>}></Route>
                 <Route path="/producto/:id" element={<Products/>}></Route>
                 <Route path="/admin" element={<Admin/>}></Route>
+                <Route path="/nuevoUsuario" element={<UserForms/>}></Route>
                </Routes>
             </div>
         </div>

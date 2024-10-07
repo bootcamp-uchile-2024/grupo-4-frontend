@@ -37,3 +37,7 @@
 .nav li:hover{
     background-color: #b23a48;
 }
+
+#icono-nav-bar{
+    margin-right: 10px;
+}

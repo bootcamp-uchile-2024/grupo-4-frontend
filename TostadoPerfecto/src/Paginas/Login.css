@@ -63,3 +63,7 @@ input {
 .btn-flat:hover {
     background-color: #461220 !important;
 }
+
+#boton-nuevo-usuario{
+    margin-left: 10px;
+}

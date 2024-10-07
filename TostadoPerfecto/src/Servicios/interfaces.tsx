@@ -3,7 +3,8 @@
 enum Tipo {
     accesorios = "Accesorios",
     bebidas = "Bebidas",
-    box = "Box"
+    box = "Box",
+    vacio = ""
 }
 
 interface Categorias {

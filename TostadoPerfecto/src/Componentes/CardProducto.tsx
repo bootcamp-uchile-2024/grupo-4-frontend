@@ -9,11 +9,10 @@ interface ProductProps {
 
 function CardProducto({ producto }: ProductProps) {
 
-    const navigate = useNavigate(); // Hook para la navegación
+    const navigate = useNavigate();
 
-    const handleNavigate = () => {
-        // Redirige a otra ruta, puedes pasar el ID del producto u otros datos si es necesario
-        navigate(`/producto/${producto.id}`); // O la ruta que necesites
+    const handleNavigate = () => {        
+        navigate(`/producto/${producto.id}`);
     }
 
     return (

@@ -15,7 +15,7 @@ function Catalogo() {
                         </Col>
                     ))}
                 </Row>
-            </Container>
+            </Container>           
         </div>
     )
 }

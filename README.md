@@ -101,7 +101,7 @@ __Interfaz de Respuesta__:
         destacado: boolean;
     }
 
-## Interfaces varias
+### Interfaces varias
 
 __Tipo de Producto__: 
 
@@ -119,7 +119,7 @@ __Categoria del Producto__:
     }
 
     
-## Crear Usuario:
+### Crear Usuario:
 
 __Ruta__: src\Servicios\Producto\crear-usuario-interface.tsx
 

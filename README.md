@@ -11,6 +11,8 @@ Asegúrate de tener las siguientes herramientas instaladas antes de continuar co
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) como gestor de paquetes
 - [Git](https://github.com/) para clonar el repositorio
+- [Vite](https://vitejs.dev/) (Vite se instalará como parte de las dependencias del proyecto)
+
 
 ## Instalación
 

@@ -63,8 +63,6 @@ npm run build
 
 __Ruta__: src\Servicios\crear-producto\crear-producto-interface.tsx
 
-__URL__: http://localhost:3000/admin => crear producto
-
 __Interfaz de Consulta__:
 
     interface RequestCreateProductoDTO {
@@ -101,7 +99,7 @@ __Interfaz de Respuesta__:
         destacado: boolean;
     }
 
-### Interfaces varias
+### Interfaces varias relacionadas a Producto
 
 __Tipo de Producto__: 
 
@@ -122,10 +120,6 @@ __Categoria del Producto__:
 ### Crear Usuario:
 
 __Ruta__: src\Servicios\Producto\crear-usuario-interface.tsx
-
-__URL__: http://localhost:3000/admin => crear usuario
-
-
 
 __Interfaz de Consulta__:
 

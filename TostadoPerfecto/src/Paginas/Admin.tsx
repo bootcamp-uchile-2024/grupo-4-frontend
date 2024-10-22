@@ -1,6 +1,6 @@
 
 import { Tabs, Tab } from "react-bootstrap";
-import "./Admin.css"
+import "../styles/Admin.css"
 import { ProductForms } from "../Componentes/forms/ProductForms";
 
 

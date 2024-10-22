@@ -1,6 +1,6 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./NavBar.css"
+import "../styles/NavBar.css"
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { faMugSaucer } from "@fortawesome/free-solid-svg-icons";
 

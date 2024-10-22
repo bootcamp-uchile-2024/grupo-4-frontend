@@ -11,6 +11,7 @@ import { Products } from "./Paginas/Products";
 import { Login } from "./Paginas/Login";
 import { Admin } from "./Paginas/Admin";
 import { UserForms } from './Componentes/forms/UserForms';
+import { Checkout } from "./Paginas/Checkout";
 
 
 function Body() {     
@@ -28,6 +29,7 @@ function Body() {
                 <Route path="/producto/:id" element={<Products/>}></Route>
                 <Route path="/admin" element={<Admin/>}></Route>
                 <Route path="/nuevoUsuario" element={<UserForms/>}></Route>
+                <Route path="/checkout" element={<Checkout/>}></Route>
                </Routes>
             </div>
         </div>

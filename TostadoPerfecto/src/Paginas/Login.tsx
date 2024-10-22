@@ -1,5 +1,5 @@
 import { faKey, faUser } from "@fortawesome/free-solid-svg-icons";
-import "./Login.css"
+import "../styles/Login.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from "react-bootstrap";
 import React, { useState } from "react";

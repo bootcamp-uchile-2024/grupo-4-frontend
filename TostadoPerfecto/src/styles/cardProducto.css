@@ -1,0 +1,9 @@
+.btn-flat {
+    background-color: #B23A48;
+    color: white;
+    margin-top: 10px;                    
+}
+
+.btn-flat:hover {
+    background-color: #FCB9B2;                                      
+}                   

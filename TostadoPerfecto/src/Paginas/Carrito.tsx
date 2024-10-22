@@ -15,7 +15,7 @@ export function Carrito() {
         setCarrito(carritoLocal);
     }, []);
 
-    // Calcular el total del carrito
+    // Calcular el total del carro 
     const calcularTotal = () => {
         return carrito.reduce((total, producto) => total + (producto.precio * producto.cantidad), 0).toFixed(2);
     };

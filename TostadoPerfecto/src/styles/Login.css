@@ -1,13 +1,13 @@
-#loginForm {
-    background-color: #8C2F39;
+#loginForm {   
     width: 20rem;
     height: 10rem;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
-}
+    border: 2px dashed #ce9ceb;
+    font-family: 'Bellerose', Inter;}
 
 .contenedor-login {
     display: flex;
@@ -17,7 +17,7 @@
 }
 
 .icono {
-    color: #EBE9E1;
+    color: #856854;
     padding-right: 10px;
 }
 
@@ -55,13 +55,13 @@ input {
 }
 
 .btn-flat {
-    background-color: #B23A48 !important;
-    color: #EBE9E1 !important;
+    background-color: #A6C1D2 !important;
+    color: #063654 !important;
     margin-top: 10px;
 }
 
 .btn-flat:hover {
-    background-color: #461220 !important;
+    background-color: #DE8A92 !important;
 }
 
 #boton-nuevo-usuario{

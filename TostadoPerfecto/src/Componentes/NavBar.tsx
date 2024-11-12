@@ -1,17 +1,15 @@
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import "../styles/NavBar.css"
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import { faMugSaucer } from "@fortawesome/free-solid-svg-icons";
+
 
 
 export function Navbar() {
     return (
         <>
             <nav className="nav">
-                <Link to="/" className="site-title">
-                <FontAwesomeIcon icon={faMugSaucer} id="icono-nav-bar" />
-                Tostado Perfecto</Link>
+                <Link to="/" className="site-title">Tostado Perfecto</Link>
                 <ul>
                     <CustomLink to="/login">Login</CustomLink>
                     <CustomLink to="/catalogo">Catálogo</CustomLink>

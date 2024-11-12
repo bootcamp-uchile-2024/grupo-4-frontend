@@ -1,11 +1,14 @@
 
 .site-title{
-    font-size: 2rem;    
+    font-size: 2rem;
+    padding-left: 40px !important;   
 }
 
 .nav{
-    background-color: #461220;
-    color: #FED0BB;;
+    background-color: #A6C1D2;
+    color: #063654;
+    font-family: 'Bellerose', Inter;
+    font-size: larger;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -31,11 +34,11 @@
 }
 
 .nav li.active{
-    background-color: #8c2f39;
+    background-color: #FEC55E;
 }
 
 .nav li:hover{
-    background-color: #b23a48;
+    background-color: #DE8A92;
 }
 
 #icono-nav-bar{

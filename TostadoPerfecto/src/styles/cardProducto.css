@@ -7,3 +7,9 @@
 .btn-flat:hover {
     background-color: #FCB9B2;                                      
 }                   
+
+
+Card.Link{
+    text-decoration: none;
+    font-family: 'Bellerose', Inter;
+}

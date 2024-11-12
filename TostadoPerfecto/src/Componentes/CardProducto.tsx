@@ -42,9 +42,12 @@ function CardProducto({ producto }: ProductProps) {
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={producto.imagen} alt={producto.nombre} />
                     <Card.Body>
-                        <Card.Link onClick={handleNavigate}>{producto.nombre}</Card.Link>
+                        <div>
+                            <Card.Link onClick={handleNavigate}>{producto.nombre}</Card.Link>
+
+                            <Card.Subtitle>{producto.precio}</Card.Subtitle>
+                        </div>
                         <Card.Text>{producto.descripcion}</Card.Text>
-                        <Card.Subtitle>{producto.precio}</Card.Subtitle>
                         <input
                             type="number"
                             value={cantidad}

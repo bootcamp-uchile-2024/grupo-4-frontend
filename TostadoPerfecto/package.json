@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docker-build": "docker build -t gonzalezfcam/tostadoperfecto:entrega-9 .",
+    "docker-tag": "docker tag tostadoperfecto:entrega-9 gonzalezfcam/tostadoperfecto:entrega-9 .",
+    "docker-push": "docker push gonzalezfcam/tostadoperfecto:entrega-9",
+    "docker-deploy": "npm run docker-build && npm run docker-tag && npm run docker-push"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",

@@ -3,6 +3,8 @@ import { Card, Button, Container, Row, Breadcrumb, FormControl } from 'react-boo
 import { productosData } from '../Data/dataProductos';
 import { useEffect, useState } from 'react';
 import { Producto, Tipo } from '../Servicios/interfaces';
+import '../styles/CardProducto.css';
+
 
 export function Products() {
   const { id } = useParams(); // Extraer el ID desde la URL

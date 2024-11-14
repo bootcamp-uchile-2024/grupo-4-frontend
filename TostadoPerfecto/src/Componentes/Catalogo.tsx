@@ -3,6 +3,8 @@ import CardProducto from './CardProducto';
 import { useEffect, useState } from 'react';
 import { Producto } from '../Servicios/interfaces';
 
+import '../styles/Catalogo.css';
+
 function Catalogo() {
     const [productos, setProductos] = useState([]);
     const [loading, setLoading] = useState<boolean>(true);

@@ -12,33 +12,41 @@ type Usuario = {
     telefono: number;
     correo: string;
     contrasenna: string;
+    rut: string;
 };
 
 export const UserForms = () => {
-    const [user, setUser] = useState<Usuario>(
-        {
-            nombre: "",
-            apellido: "",
-            direccion: "",
-            comuna: "",
-            ciudad: "",
-            region: "",
-            telefono: 0,
-            correo: "",
-            contrasenna: ""
-
-        });
+    const [user, setUser] = useState<Usuario>({
+        nombre: "",
+        apellido: "",
+        direccion: "",
+        comuna: "",
+        ciudad: "",
+        region: "",
+        telefono: 0,
+        correo: "",
+        contrasenna: "",
+        rut: ""
+    });
+    const [confirmarContrasenna, setConfirmarContrasenna] = useState<string>("");
     const [message, setMessage] = useState<string>("");
 
-    // Manejar cambios en el formulario
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setUser((prevUser) => ({ ...prevUser, [name]: value }));
     };
 
-    // Enviar el formulario al backend
+    const handleConfirmPasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setConfirmarContrasenna(e.target.value);
+    };
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
+        if (user.contrasenna !== confirmarContrasenna) {
+            setMessage("Error: Las contraseñas no coinciden.");
+            return;
+        }
 
         try {
             const response = await fetch("http://44.201.117.138:3000/usuario", {
@@ -46,19 +54,37 @@ export const UserForms = () => {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify(user),
+                body: JSON.stringify({
+                    ...user,
+                    telefono: Number(user.telefono),
+                    pedidos: [],
+                    carritoDeCompras: []
+                }),
             });
 
             if (response.ok) {
                 const data = await response.json();
-                console.log('ok', data)
+                console.log("Usuario creado:", data);
                 setMessage("Usuario creado exitosamente.");
+                setUser({
+                    nombre: "",
+                    apellido: "",
+                    direccion: "",
+                    comuna: "",
+                    ciudad: "",
+                    region: "",
+                    telefono: 0,
+                    correo: "",
+                    contrasenna: "",
+                    rut: ""
+                });
+                setConfirmarContrasenna("");
             } else {
                 const errorData = await response.json();
                 setMessage(`Error: ${errorData.message}`);
             }
         } catch (error) {
-            console.log('error', error)
+            console.error("Error al conectar con el servidor:", error);
             setMessage("Error al conectar con el servidor.");
         }
     };
@@ -146,7 +172,7 @@ export const UserForms = () => {
                 <div className="mini-caja">
                     <label htmlFor="correo" className="label-form">Correo Electrónico</label>
                     <input
-                        type="text"
+                        type="email"
                         name="correo"
                         value={user.correo}
                         onChange={handleChange}
@@ -155,9 +181,20 @@ export const UserForms = () => {
                     />
                 </div>
                 <div className="mini-caja">
-                    <label htmlFor="contrasenna" className="label-form">Contraseña</label>
+                    <label htmlFor="rut" className="label-form">RUT</label>
                     <input
                         type="text"
+                        name="rut"
+                        value={user.rut}
+                        onChange={handleChange}
+                        placeholder="RUT"
+                        required
+                    />
+                </div>
+                <div className="mini-caja">
+                    <label htmlFor="contrasenna" className="label-form">Contraseña</label>
+                    <input
+                        type="password"
                         name="contrasenna"
                         value={user.contrasenna}
                         onChange={handleChange}
@@ -168,11 +205,10 @@ export const UserForms = () => {
                 <div className="mini-caja">
                     <label htmlFor="confirmarContrasenna" className="label-form">Confirmar Contraseña</label>
                     <input
-                        type="text"
-                        name="contrasenna"
-                        value={user.contrasenna}
-                        onChange={handleChange}
-                        placeholder="Contraseña"
+                        type="password"
+                        value={confirmarContrasenna}
+                        onChange={handleConfirmPasswordChange}
+                        placeholder="Confirmar Contraseña"
                         required
                     />
                 </div>

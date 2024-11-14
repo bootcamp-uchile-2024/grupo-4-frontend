@@ -19,7 +19,7 @@ function Body() {
     return (
         <div className="body-container">
             <Navbar />
-            <div className="container">
+            <div className="container d-flex align-items-center justify-content-center">
                <Routes>
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/login" element={<Login/>}></Route>

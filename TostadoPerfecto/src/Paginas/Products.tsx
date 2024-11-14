@@ -17,7 +17,7 @@ export function Products() {
     origen: '',
     tipo: Tipo.vacio,
     formato: '',
-    fecha: new Date(), 
+    fecha: new Date(),
     categorias: {
       id: 0,
       nombre: '',
@@ -41,13 +41,13 @@ export function Products() {
   // Función para añadir el producto al carrito
   const handleAddToCart = () => {
     console.log('Añadir al carrito', producto, cantidad);
-    
+
     if (!producto) return;
 
-    let carrito = JSON.parse(sessionStorage.getItem('carrito') || '[]');
+    const carrito = JSON.parse(sessionStorage.getItem('carrito') || '[]');
 
     // Verificar si el producto ya está en el carrito
-    const productoExistente = carrito.find((item: any) => item.id === producto.id);
+    const productoExistente = carrito.find((item: { id: number; }) => item.id === producto.id);
 
     if (productoExistente) {
       productoExistente.cantidad += cantidad; // Aumentar la cantidad si el producto ya está en el carrito
@@ -59,7 +59,10 @@ export function Products() {
 
     alert(`Añadido al carrito: ${producto.nombre} - Cantidad: ${cantidad}`);
 
+
+
   };
+
 
   // Verificar si se encontró el producto
   if (!producto) {

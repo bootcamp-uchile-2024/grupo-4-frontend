@@ -1,6 +1,5 @@
-import { faKey, faUser } from "@fortawesome/free-solid-svg-icons";
+
 import "../styles/Login.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from "react-bootstrap";
 import React, { useState } from "react";
 import {  useNavigate} from 'react-router-dom';
@@ -36,29 +35,29 @@ export function Login() {
     return (
         <div className="contenedor-login">            
             <form onSubmit={handleSubmit} id="loginForm">
-                <div className="mini-caja-login">
-                    <FontAwesomeIcon icon={faUser} className="icono" />
+                <div className="mini-caja-login">    
+                    <span>Correo</span>                
                     <input
                         type="text"
                         name="nombre"
                         value={formData.nombre}
                         onChange={handleChange}
                         id="usuario"
-                        placeholder="Nombre de usuario" />
+                        placeholder="Escribe tu correo aquí" />
                 </div>
-                <div className="mini-caja-login">
-                    <FontAwesomeIcon icon={faKey} className="icono" />
+                <div className="mini-caja-login"> 
+                    <span>Contraseña</span>                  
                     <input
                         type="password"
                         name="password"
                         value={formData.password}
                         onChange={handleChange}
                         id="password"
-                        placeholder="Contraseña" />
+                        placeholder="Escribe tu contraseña aquí" />
                 </div>
                 <div className="mini-caja-button">
-                    <Button variant="flat" type="submit" size="sm">Ingresar</Button>
-                    <Button variant="flat" type="submit" id="boton-nuevo-usuario" onClick={onClickNuevoUsuario} size="sm">Nuevo Usuario</Button>
+                    <Button className="button" variant="flat" type="submit" >Ingresar</Button>
+                    <Button className="button" variant="flat" type="submit" id="boton-nuevo-usuario" onClick={onClickNuevoUsuario} >Nuevo Usuario</Button>
                 </div>
             </form>
         </div>

@@ -3,7 +3,7 @@ import { Button, Card, Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
-import '../styles/cardProducto.css';
+import '../styles/CardProducto.css';
 
 
 interface ProductProps {
@@ -41,7 +41,7 @@ function CardProducto({ producto }: ProductProps) {
             <Container>
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={producto.imagen} alt={producto.nombre} />
-                    <Card.Body>
+                    <Card.Body id='card-body'>
                         <div>
                             <Card.Link onClick={handleNavigate}>{producto.nombre}</Card.Link>
 
@@ -55,8 +55,9 @@ function CardProducto({ producto }: ProductProps) {
                             onChange={(e) => setCantidad(Number(e.target.value))} // Cambia la cantidad
                             style={{ width: '60px', marginRight: '10px', marginTop: '10px' }}
                         />
-                        <br />
+                        <div>
                         <Button variant="flat" onClick={handleAddToCart}>Añadir al carrito</Button>
+                        </div>
                     </Card.Body>
                 </Card>
             </Container>

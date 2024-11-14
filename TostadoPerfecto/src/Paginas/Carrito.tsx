@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../styles/carrito.css';
+import '../styles/Carrito.css';
 import { Button, Card, Table } from 'react-bootstrap';
 
 export function Carrito() {

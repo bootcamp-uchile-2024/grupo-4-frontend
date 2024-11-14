@@ -1,4 +1,3 @@
-
 #footer {
     width: 100%;
     background-color: #A6C1D2;
@@ -8,5 +7,45 @@
 
 #footer section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.seccion-categoria {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.seccion-iconos {
+    display: flex;
+    justify-content: center;
+}
+
+.seccion-iconos a{
+    padding: 0px 10px;
+}
+
+.seccion-legal {
+    display: flex;
+    justify-content: space-evenly
+}
+
+span {
+    font-family: 'Bellerose', Inter;
+    font-size: 20px;
+}
+
+div a {
+    text-decoration: none;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #063654;
+}
+
+div a:hover{
+    color: #DE8A92;
 }

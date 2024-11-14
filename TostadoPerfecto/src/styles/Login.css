@@ -1,19 +1,21 @@
-#loginForm {   
-    width: 20rem;
-    height: 10rem;
+#loginForm {
+
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
     border: 2px dashed #ce9ceb;
-    font-family: 'Bellerose', Inter;}
+    font-family: 'Bellerose', Inter;
+}
 
 .contenedor-login {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
+    height: 50vh;
+
 }
 
 .icono {
@@ -23,10 +25,11 @@
 
 .mini-caja-login {
     display: flex;
+    flex-direction: column;
     gap: 0.15rem;
-    align-items: center;
     text-align: start;
     width: 90%;
+
 }
 
 .mini-caja-login input {
@@ -48,7 +51,9 @@
 .mini-caja-button {
     display: flex;
     justify-content: center;
+    padding: 5px;   
 }
+
 
 input {
     border-radius: 5px;
@@ -58,12 +63,18 @@ input {
     background-color: #A6C1D2 !important;
     color: #063654 !important;
     margin-top: 10px;
+    font-size: 20px !important;
 }
 
 .btn-flat:hover {
     background-color: #DE8A92 !important;
 }
 
-#boton-nuevo-usuario{
+#boton-nuevo-usuario {
     margin-left: 10px;
 }
+
+span {
+    font-family: 'Bellerose', Inter;
+}
+

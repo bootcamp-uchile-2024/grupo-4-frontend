@@ -6,17 +6,15 @@ import Body from './Body.tsx'
 import Footer from './Footer.tsx'
 import { BrowserRouter } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { TostadoPerfectoProvider } from './context/tostadoPerfecto.context.tsx'
+
 
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
-      <TostadoPerfectoProvider>
+    <BrowserRouter>      
         <Header />
         <Body />
-        <Footer />
-      </TostadoPerfectoProvider>
+        <Footer />     
     </BrowserRouter>
   </StrictMode>,
 )

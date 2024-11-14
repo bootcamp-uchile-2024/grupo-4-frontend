@@ -13,6 +13,10 @@ import { Admin } from "./Paginas/Admin";
 import { UserForms } from './Componentes/forms/UserForms';
 import { Checkout } from "./Paginas/Checkout";
 
+import TestPaises from "./Componentes/TestPaises";
+import TestFotos from "./Componentes/TestFotos";
+import Test from "./Componentes/Test";
+
 
 function Body() {     
     return (
@@ -23,6 +27,9 @@ function Body() {
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/login" element={<Login/>}></Route>
                 <Route path="/catalogo" element={<Catalogo/>}></Route>
+                <Route path="/test" element={<Test/>}></Route>
+                <Route path="/testPaises" element={<TestPaises/>}></Route>
+                <Route path="/testPhotos" element={<TestFotos/>}></Route>
                 <Route path="/carrito" element={<Carrito/>}></Route>
                 <Route path="/foro" element={<Foro/>}></Route>
                 <Route path="/about" element={<About/>}></Route>

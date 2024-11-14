@@ -15,13 +15,19 @@ function Catalogo() {
         const fetchData = async () => {
             setLoading(true);
             try {
-                const response = await fetch(`http://44.201.117.138:3000/productos?page=${pagActual}&pageSize=${PAGE_SIZE}`);
-                if (!response.ok) {
-                    throw new Error('Error en la petición');
+                const productsResponse = await fetch(`http://44.201.117.138:3000/productos?page=${pagActual}&pageSize=${PAGE_SIZE}`);
+                
+                if(productsResponse.status === 200) {
+
+                    const result = await productsResponse.json();
+                    setProductos(result.data);
+                    setTotalPages(result.totalPages);
+
+                } else {
+                    setError('Error al obtener productos');
                 }
-                const result = await response.json();
-                setProductos(result.data);
-                setTotalPages(result.totalPages);
+
+
             } catch (error) {
                 setError(error instanceof Error ? error.message : 'Error desconocido');
             } finally {
